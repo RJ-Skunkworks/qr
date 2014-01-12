@@ -28,7 +28,7 @@ def url2qr(URL,filename = None, size = None, imgtype = 'svg'):
         qr = qrcode.QRCode(version=None)
         suffix = '.png'
 
-    if type(URL) == str:
+    if type(URL) == str or type(URL) == unicode:
         qr.add_data(URL)
         qr.make(fit=fit)
         img = qr.make_image()
