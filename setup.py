@@ -1,8 +1,9 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
+
 setup(
   name = 'qrgen',
-  packages = ['qrgen'], # this must be the same as the name above
-  version = '0.1',
+  packages = find_packages(),
+  version = '0.3',
   description = 'Turn a URL into a QR code',
   author = 'Roy Keys',
   author_email = 'roy.coding@gmail',
